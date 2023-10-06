@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Book Store</title>
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css"></link>
+<!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.scss"></link> -->
+
+<body>
+    <header>
+        <div id="header" style="background-image:url(https://ramjibs.github.io/bookstore/asset/bgimg.jpg)">
+        <h2 id="header-title">New York Times Book Store</h2>
+         <div class="books-all-filter">       
+        <select name="books_filter" id="all-filters">
+            <option value="author">Author</option>
+            <option value="booktitle">Book Title</option>
+            <option value="publisher">Publisher</option>
+          </select>
+          <input type="text" placeholder="Enter your suggestions" id="filter-text"/>
+          <button class="btn-submit-filters" >TRY MY LUCK</button>
+          </div>
+        </div>
+    </header>
+    <section class="filter">
+        <div class="filter-dropdown">
+            <label for="Genre">Choose a Genre</label>
+            <select name="books_filter" id="genre">
+              <option value="all">All</option>
+            </select>
+            <button type="submit" id="submit">SUBMIT</button>
+        </div>
+        <div class="filter-date">
+
+        </div>
+    </section>
+    <div id="render">
+    </div>
+    <div id="modal_display">
+    </div>
+    <div class="preloader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/search.js" type="module"></script>
+    <script src="assets/js/modal.js" type="module"></script>
+    <script src="assets/js/modal_render.js" type="module"></script>
+    <script src="assets/js/filter.js" type="module"></script>
+  
+    
+</body>
+</head>
+</html>
